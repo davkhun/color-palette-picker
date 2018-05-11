@@ -24,7 +24,7 @@ dropdownTitle|string|Available colors|
 ```
 onSelected
 ```
-Return choosen color 
+Return chosen color 
 
 ```javascript
 $('#colorpalettediv').colorPalettePicker({
