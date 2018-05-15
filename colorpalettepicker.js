@@ -48,9 +48,8 @@
         transparent: 'rgb(255, 255, 255)'
     }
 
-
     var methods = {
-        init: function(params) {
+        init: function (params) {
             const options = $.extend({}, $.fn.colorPalettePicker.defaults, params);
             // button configuration
             const btn = $(options.button
@@ -60,6 +59,15 @@
             $(this).html(btn);
             // dropdown configuration
             const dropdown = $(options.dropdown.replace('{dropdownTitle}', options.dropdownTitle));
+            // check if colors passed throught data-colors
+            const dataColors = $(this).attr('data-colors');
+            if (dataColors != undefined) {
+                options.palette = dataColors.split(',');
+            }
+            // check if lines passed throught data-lines
+            const dataLines = $(this).attr('data-lines');
+            if (dataLines != undefined)
+                options.lines = dataLines;
             // calculating items per line
             const paletteLength = options.palette.length;
             const itemsPerLine = Math.round(paletteLength / options.lines);
@@ -79,7 +87,7 @@
             $(this).append(dropdown);
             // item click bindings
             $(this).find('div[name^=picker_]').on('click',
-                function() {
+                function () {
                     const selectedColor = $(this).attr('data-color');
                     const colorSquare = $('span[name='+options.buttonPreviewName+']');
                     colorSquare.css('color', selectedColor);
@@ -116,6 +124,4 @@
         lines: 1,
         onSelected: null
     };
-
-
 })(jQuery);
