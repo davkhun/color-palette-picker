@@ -1,4 +1,4 @@
-# color-palette-picker for bootstrap 4
+# color-palette-picker for bootstrap 3/4
 Simple color palette picker for bootstrap
 
 ## Usage:
@@ -13,6 +13,7 @@ $('#colorpalettediv').colorPalettePicker();
 
 Name|Html tag|Type|Default|Description
 ---|---|---|---|---
+bootstrap||int|4|Selected version of Bootstrap (can choose between 3 or 4)
 lines|data-lines|int|1|Number of rows to be divided palette array
 palette|data-colors|array|['aqua', 'azure', 'beige', 'brown', 'cyan', 'darkcyan', 'darkgrey', 'darkkhaki', 'darkorange', 'darkorchid', 'darksalmon', 'fuchsia', 'gold', 'green', 'khaki', 'lightblue', 'lightcyan', 'lightgreen', 'lightgrey', 'lightpink', 'lightyellow', 'lime', 'magenta', 'olive', 'orange', 'pink', 'silver', 'yellow']|List of colors to choose from
 buttonText||string|Choose color|
