@@ -11,13 +11,13 @@ $('#colorpalettediv').colorPalettePicker();
 ```
 ## Options
 
-Name|Type|Default|Description
----|---|---|---
-lines|int|1|Number of rows to be divided palette array
-palette|array|['aqua', 'azure', 'beige', 'brown', 'cyan', 'darkcyan', 'darkgrey', 'darkkhaki', 'darkorange', 'darkorchid', 'darksalmon', 'fuchsia', 'gold', 'green', 'khaki', 'lightblue', 'lightcyan', 'lightgreen', 'lightgrey', 'lightpink', 'lightyellow', 'lime', 'magenta', 'olive', 'orange', 'pink', 'silver', 'yellow']|List of colors to choose from
-buttonText|string|Choose color|
-buttonClass|string|btn btn-secondary dropdown-toggle|
-dropdownTitle|string|Available colors|
+Name|Html tag|Type|Default|Description
+---|---|---|---|---
+lines|data-lines|int|1|Number of rows to be divided palette array
+palette|data-colors|array|['aqua', 'azure', 'beige', 'brown', 'cyan', 'darkcyan', 'darkgrey', 'darkkhaki', 'darkorange', 'darkorchid', 'darksalmon', 'fuchsia', 'gold', 'green', 'khaki', 'lightblue', 'lightcyan', 'lightgreen', 'lightgrey', 'lightpink', 'lightyellow', 'lime', 'magenta', 'olive', 'orange', 'pink', 'silver', 'yellow']|List of colors to choose from
+buttonText||string|Choose color|
+buttonClass||string|btn btn-secondary dropdown-toggle|
+dropdownTitle||string|Available colors|
 
 ## Methods
 
